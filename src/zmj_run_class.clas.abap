@@ -21,7 +21,7 @@ CLASS zmj_run_class IMPLEMENTATION.
 
 
     TRY.
-        FINAL(api) = cl_aic_islm_compl_api_factory=>get(  )->create_instance( islm_scenario = 'TEST' ).
+        DATA(api) = cl_aic_islm_compl_api_factory=>get(  )->create_instance( islm_scenario = 'TEST' ).
       CATCH cx_aic_api_factory.
         "handle exception
     ENDTRY.
